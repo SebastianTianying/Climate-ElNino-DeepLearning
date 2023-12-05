@@ -19,13 +19,18 @@ This study will focus specifically on incorporating historical data of past El N
 corresponding magnitude index (ENSO Index), ERA5 [7] weather data, as well as Storm Events data
 in the U.S to output severe weather predictions with up to a 12-month lead time.
 Our intended contributions are as follows:
+
 • Aggregate relevant features from ERA5, storm event data, and ENSO Indices to create a
 single dataset for severe weather event prediction in the contiguous United States
+
 • Explore the efficacy of fine-tuning foundational climate models for the task of severe weather
 event prediction compared to developing a specialized deep learning architecture
+
 • Predict the number of extreme weather-related disasters in the upcoming months across the
 contiguous United States with a spatial resolution of 0.5 degrees
+
 • Evaluate the impact of including ENSO indices as an additional input feature, performing a
 comprehensive ablation study with different combinations of ENSO indices
+
 
 
