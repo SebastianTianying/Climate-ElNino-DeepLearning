@@ -2,6 +2,9 @@
 
 CS269 Group Project 
 
+Authors: Allen Cheung, Garrick Su, Tianying Zhu 
+CS@UCLA
+
 The primary goal of this work is to develop a robust machine learning model capable of predicting
 the total number of severe storms and other weather-related disasters, such as flash floods, winter
 storms, or excessive heat, during upcoming months in the contiguous United States.
@@ -24,5 +27,4 @@ contiguous United States with a spatial resolution of 0.5 degrees
 • Evaluate the impact of including ENSO indices as an additional input feature, performing a
 comprehensive ablation study with different combinations of ENSO indices
 
-Authors: Allen Cheung, Garrick Su, Tianying Zhu 
-CS@UCLA
+
