@@ -2,7 +2,7 @@
 
 CS269 Group Project 
 
-Authors: Allen Cheung, Garrick Su, Tianying Zhu 
+Authors: Allen Cheung (allencheung@ucla.edu), Garrick Su (g2su@cs.ucla.edu), Tianying Zhu (tianyingzhu@cs.ucla.edu)
 
 CS@UCLA
 
