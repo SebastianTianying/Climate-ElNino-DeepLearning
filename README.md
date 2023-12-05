@@ -3,6 +3,7 @@
 CS269 Group Project 
 
 Authors: Allen Cheung, Garrick Su, Tianying Zhu 
+
 CS@UCLA
 
 The primary goal of this work is to develop a robust machine learning model capable of predicting
