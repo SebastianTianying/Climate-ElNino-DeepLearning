@@ -1,0 +1,1 @@
+{'variables': {'imerg5625/precipitationcal': {'name': 'precipitationcal', 'mmap_name': 'storm_data_us.mmap', 'type': 'temp', 'dims': (5, 12), 'offset': 0, 'first_ts': 283996800.0, 'last_ts': 1577833200.0, 'tfreq_s': 3600, 'levels': [0]}}, 'memmap': {'storm_data_us.mmap': {'dims': (359400, 1, 5, 12), 'dtype': 'float32', 'daterange': (283996800.0, 1577833200.0), 'tfreq_s': 3600}}}

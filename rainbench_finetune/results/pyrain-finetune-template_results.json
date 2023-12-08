@@ -1,0 +1,8 @@
+{
+    "test_loss": 0.9048370718955994,
+    "test_loss_2192hrs": 1.0349886417388916,
+    "test_loss_4384hrs": 0.7066377997398376,
+    "test_loss_precipitationcal": 0.6486579775810242,
+    "test_loss_precipitationcal_2192hrs": 0.7419600486755371,
+    "test_loss_precipitationcal_4384hrs": 0.506574273109436
+}
