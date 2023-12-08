@@ -32,5 +32,7 @@ contiguous United States with a spatial resolution of 0.5 degrees
 • Evaluate the impact of including ENSO indices as an additional input feature, performing a
 comprehensive ablation study with different combinations of ENSO indices
 
+Data Processing Colab Notebook: https://colab.research.google.com/drive/1eVJUQkIUGvwLQj-TU5UYvGBR02monomp?usp=sharing, also added as DataProcessing.ipynb under src/data_preprocessing.
 
+Heavily based on https://github.com/tung-nd/ClimaX-finetuning
 

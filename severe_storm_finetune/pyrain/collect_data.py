@@ -22,22 +22,11 @@ def write_partition_conf(sources: str, imerg: bool):
     """
     Write a time partition configuration dictionary.
     """
-    if sources in ['simsat', 'simsat_era', 'era16_3']:
-        train_timerange = (datetime(2016,4,1,0).timestamp(), datetime(2017, 12, 31,23).timestamp())
-        sample_stride = 3
-    
-    elif sources in ['era', 'era_nino']:
-        if imerg:
-            train_timerange = (datetime(2000,6,1,0).timestamp(), datetime(2017, 12,31,23).timestamp())
-        else:
-            train_timerange = (datetime(1979,1,1,7).timestamp(), datetime(2017, 12,31,23).timestamp())
-        sample_stride = 1
-
+   
+    sample_stride = 1
+    train_timerange = (datetime(2000,6,1,0).timestamp(), datetime(2017, 12,31,23).timestamp())
     val_timerange =  (datetime(2018,1,6,0).timestamp(), datetime(2018, 12,31,23).timestamp())
     test_timerange = (datetime(2019,1,6,0).timestamp(), datetime(2019, 12, 31, 17).timestamp())
-    # train_timerange = (datetime(2016,4,1,0).timestamp(), datetime(2016, 4, 15,23).timestamp())
-    # val_timerange =  (datetime(2018,1,6,0).timestamp(), datetime(2018, 1,15,23).timestamp())
-    # test_timerange = (datetime(2019,1,6,0).timestamp(), datetime(2019, 1, 15, 23).timestamp())
 
     increments = int(sample_stride * 60 * 60)
 
@@ -96,13 +85,10 @@ def define_categories(sources: str, inc_time: bool, imerg: bool):
     """
     # nino_vars_list = ['nino34', 'nino12', 'nino3', 'nino4'] if 'nino' in sources else []
     nino_vars_list = ['nino34'] if 'nino' in sources else []
-    simsat_vars_list = ['clbt-0', 'clbt-1', 'clbt-2'] if 'simsat' in sources else []
     era_vars_list = ['sp', 't2m', 'z-300', 'z-500', 'z-850', 't-300', 't-500', 't-850', \
         'q-300', 'q-500', 'q-850', 'clwc-300', 'clwc-500', 'ciwc-500', 'clwc-850', 'ciwc-850'] if 'era' in sources else []
-    simsat_vars_list = ['clbt-0', 'clbt-1', 'clbt-2'] if 'simsat' in sources else []
-    simsat_vars_list_clbt = ['clbt'] if 'simsat' in sources else []
-    input_temporal = simsat_vars_list + era_vars_list + nino_vars_list
-    input_temporal_clbt = simsat_vars_list_clbt + era_vars_list + nino_vars_list
+    input_temporal = era_vars_list + nino_vars_list
+    input_temporal_clbt = era_vars_list + nino_vars_list
     constants = ['lsm','orography', 'lat2d', 'lon2d', 'slt']
     
     inputs =  constants + input_temporal + (['hour', 'day', 'month'] if inc_time else [])

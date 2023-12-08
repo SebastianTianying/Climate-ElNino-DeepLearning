@@ -250,7 +250,7 @@ class DatafileJoin():
             return results_dict[list(results_dict.keys())[0]]
 
 
-class RainbenchDataset(torch.utils.data.Dataset):
+class SevereStormDataset(torch.utils.data.Dataset):
     'Characterizes a dataset for PyTorch'
 
     def __init__(self, datapath,
